@@ -1,1 +1,10 @@
-test
+Flyweight design.
+
+In order to save memory, we will reuse the same ingredient if it is present in multiple recipes. 
+
+Stratergy behavioural pattern
+
+We will have multiple sorting algoriths for the types of searches users require.
+
+Build. 
+the recipe will be prompted piece by piece to allow to user to input each field seperately
