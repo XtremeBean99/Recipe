@@ -1,4 +1,4 @@
-import Recipe
+from Recipe import Recipe
 # ---------- Sorter Class ----------
 class Sorter:
     @staticmethod

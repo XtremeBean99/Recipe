@@ -1,5 +1,5 @@
-import RecipeManager
-import TerminalUI
+from RecipeManager import RecipeManager
+from TerminalUI import TerminalUI
 
 # ---------- AppController Class ----------
 class AppController:
@@ -50,4 +50,4 @@ class AppController:
             selected = self.ui.display_recipe_names(sorted_recipes)
             if selected:
                 self.ui.display_recipe(selected)
-        elif choice == '7':
+        #elif choice == '7':

@@ -1,7 +1,6 @@
-import RecipeManager
-import Recipe
-import Sorter
-import IngredientFactory
+from Recipe import Recipe
+from Sorter import Sorter
+from IngredientFactory import IngredientFactory
 import json
 # ---------- RecipeManager Class ----------
 class RecipeManager:

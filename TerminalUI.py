@@ -1,6 +1,6 @@
-import Recipe
-import Recipebuilder
-import IngredientFactory
+from Recipe import Recipe
+from Recipebuilder import Recipebuilder
+from IngredientFactory import IngredientFactory
 
 # ---------- TerminalUI Class ----------
 class TerminalUI:

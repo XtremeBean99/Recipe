@@ -1,4 +1,4 @@
-import Ingredient
+from Ingredient import Ingredient
 # ---------- IngredientFactory Class ----------
 class IngredientFactory:
     def __init__(self):

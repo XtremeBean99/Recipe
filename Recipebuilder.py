@@ -1,8 +1,8 @@
-import Ingredient
-import Recipe
+from Ingredient import Ingredient
+from Recipe import Recipe
 
 # ---------- RecipeBuilder Class ----------
-class RecipeBuilder:
+class Recipebuilder:
     def __init__(self):
         self.name = ""
         self.steps: list[str] = []

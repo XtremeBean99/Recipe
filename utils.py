@@ -1,0 +1,7 @@
+import time
+def SlowWrite(text):
+    for i in text:
+        print(i, end="")
+        print("", end="")
+        time.sleep(1/50)
+SlowWrite("hey you suck basll cock in the asshole what the fuck is the ass hole doing like shit cuh")
