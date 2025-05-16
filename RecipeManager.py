@@ -52,6 +52,10 @@ class RecipeManager:
                 ingredients = [factory.get_ingredient(i) for i in entry["ingredients"]]
                 recipe = Recipe(
                     name=entry["name"],
+                    ingredients=ingredients,
+                    steps=entry["steps"],
+                    rating=entry["rating"],
+                    is_favourite=entry["is_favourite"]
                 )
         except Exception as e:
             print(f"Error loading recipes from JSON: {e}")
