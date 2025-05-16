@@ -51,5 +51,20 @@ class TerminalUI:
         builder = Recipebuilder()
         builder.add_name(name)
         builder.add_ingredients(ingredients)
+        while True:
+            step = self.get_input("Enter a cooking step (or type 'done' to finish): ")
+            if step.lower() == 'done':
+                break
+            builder.add_step(step)
+
+        rating = float(self.get_input("Enter rating (0-5): "))
+        builder.add_rating(rating)
+
+        favourite = self.get_input("Mark as favourite? (y/n): ").lower() == 'y'
+        if favourite:
+            builder.toggle_favourite()
+
+        return builder.build()
+
 
    
