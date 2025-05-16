@@ -1,3 +1,6 @@
+import Ingredient
+import Recipe
+
 # ---------- RecipeBuilder Class ----------
 class RecipeBuilder:
     def __init__(self):

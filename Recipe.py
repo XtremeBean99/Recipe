@@ -1,3 +1,4 @@
+import Ingredient
 # ---------- Recipe Class ----------
 class Recipe:
     def __init__(self, name: str, ingredients: list[Ingredient], steps: list[str], rating: float, is_favourite: bool):

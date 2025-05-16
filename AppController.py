@@ -1,3 +1,6 @@
+import RecipeManager
+import TerminalUI
+
 # ---------- AppController Class ----------
 class AppController:
     def __init__(self):

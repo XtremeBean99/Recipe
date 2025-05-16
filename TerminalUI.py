@@ -1,3 +1,7 @@
+import Recipe
+import Recipebuilder
+import IngredientFactory
+
 # ---------- TerminalUI Class ----------
 class TerminalUI:
     def show_menu(self):
@@ -42,9 +46,8 @@ class TerminalUI:
         factory = IngredientFactory()
         ingredients = [factory.get_ingredient(name.strip()) for name in ing_names]
 
-        builder = RecipeBuilder()
+        builder = Recipebuilder()
         builder.add_name(name)
         builder.add_ingredients(ingredients)
 
-        # Add steps one by one
-        while True:
+   

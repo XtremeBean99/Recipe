@@ -1,3 +1,8 @@
+import RecipeManager
+import Recipe
+import Sorter
+import IngredientFactory
+import json
 # ---------- RecipeManager Class ----------
 class RecipeManager:
     def __init__(self):
@@ -48,3 +53,6 @@ class RecipeManager:
                 ingredients = [factory.get_ingredient(i) for i in entry["ingredients"]]
                 recipe = Recipe(
                     name=entry["name"],
+                )
+        except Exception as e:
+            print(f"Error loading recipes from JSON: {e}")
