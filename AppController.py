@@ -49,5 +49,22 @@ class AppController:
             sorted_recipes = self.manager.sort_recipes().sort_rating(self.manager.list_all())
             selected = self.ui.display_recipe_names(sorted_recipes)
             if selected:
+                self.ui.display_recipe(selected)        
+        elif choice == '7':
+            name = self.ui.get_input("Enter recipe name to favourite: ")
+            self.manager.favourite_recipe(name)
+        elif choice == '8':
+            name = self.ui.get_input("Enter recipe name to rate: ")
+            rating = float(self.ui.get_input("Enter new rating (0-5): "))
+            self.manager.rate_recipe(name, rating)
+        elif choice == '9':
+            favourites = self.manager.list_favourites()
+            selected = self.ui.display_recipe_names(favourites)
+            if selected:
                 self.ui.display_recipe(selected)
-        #elif choice == '7':
+        elif choice == '0':
+            self.manager.save_to_json(self.recipe_file)
+            self.ui.display_message("Recipes saved. Goodbye!")
+            exit()
+        else:
+            self.ui.display_message("Invalid option. Please try again.")

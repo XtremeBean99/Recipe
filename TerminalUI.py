@@ -4,6 +4,8 @@ from IngredientFactory import IngredientFactory
 
 # ---------- TerminalUI Class ----------
 class TerminalUI:
+    def __init__(self):
+        print(list[Recipe])
     def show_menu(self):
         print("""
         1. Add Recipe

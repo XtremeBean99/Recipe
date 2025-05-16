@@ -55,3 +55,9 @@ class RecipeManager:
                 )
         except Exception as e:
             print(f"Error loading recipes from JSON: {e}")
+    def save_to_json(self, path: str):
+        try:
+            with open(path, 'w') as f:
+                json.dump([r.to_dict() for r in self.recipes], f, indent=4)
+        except Exception as e:
+            print(f"Failed to save recipes: {e}")
