@@ -2,7 +2,7 @@ from Ingredient import Ingredient
 from Recipe import Recipe
 
 # ---------- RecipeBuilder Class ----------
-class Recipebuilder:
+class RecipeBuilder:
     def __init__(self):
         self.name = ""
         self.steps: list[str] = []

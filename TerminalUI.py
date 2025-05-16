@@ -1,5 +1,5 @@
 from Recipe import Recipe
-from Recipebuilder import Recipebuilder
+from RecipeBuilder import RecipeBuilder
 from IngredientFactory import IngredientFactory
 
 # ---------- TerminalUI Class ----------
@@ -48,7 +48,7 @@ class TerminalUI:
         factory = IngredientFactory()
         ingredients = [factory.get_ingredient(name.strip()) for name in ing_names]
 
-        builder = Recipebuilder()
+        builder = RecipeBuilder()
         builder.add_name(name)
         builder.add_ingredients(ingredients)
         while True:
