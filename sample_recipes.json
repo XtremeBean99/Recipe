@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Pasta Carbonara",
+    "ingredients": ["pasta", "egg", "cheese", "bacon"],
+    "steps": ["Boil pasta", "Fry bacon", "Mix egg and cheese", "Combine everything"],
+    "rating": 4.5,
+    "is_favourite": true
+  },
+  {
+    "name": "Pancakes",
+    "ingredients": ["flour", "milk", "egg", "sugar"],
+    "steps": ["Mix ingredients", "Heat pan", "Pour batter", "Flip and serve"],
+    "rating": 4.2,
+    "is_favourite": false
+  }
+]
